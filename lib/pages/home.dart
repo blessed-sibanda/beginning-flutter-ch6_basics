@@ -3,6 +3,7 @@ import 'package:ch6_basics/widgets/popup_menu_button.dart';
 import 'package:ch6_basics/widgets/decorated_container.dart';
 import 'package:ch6_basics/widgets/columns_and_rows.dart';
 import 'package:ch6_basics/widgets/button_rows.dart';
+import 'package:ch6_basics/widgets/my_button_bar.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -52,6 +53,7 @@ class _HomeState extends State<Home> {
           child: SingleChildScrollView(
             child: Column(
               children: const [
+                MyButtonBar(),
                 ButtonsRowsWidget(),
                 ContainerWithBoxDecorationWidget(),
                 ColumnWidget(),
