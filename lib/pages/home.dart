@@ -61,16 +61,31 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {},
-      //   child: const Icon(Icons.play_arrow),
-      //   backgroundColor: Colors.lightGreen.shade100,
-      // ),
-      floatingActionButton: FloatingActionButton.extended(
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        icon: const Icon(Icons.play_arrow),
+        child: const Icon(Icons.play_arrow),
         backgroundColor: Colors.lightGreen.shade100,
-        label: const Text('Play'),
+      ),
+      // floatingActionButton: FloatingActionButton.extended(
+      //   onPressed: () {},
+      //   icon: const Icon(Icons.play_arrow),
+      //   backgroundColor: Colors.lightGreen.shade100,
+      //   label: const Text('Play'),
+      // ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.lightGreen.shade100,
+        shape: const CircularNotchedRectangle(),
+        notchMargin: 7.0,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            Icon(Icons.pause),
+            Icon(Icons.stop),
+            Icon(Icons.access_time),
+            Padding(padding: EdgeInsets.all(32.0)),
+          ],
+        ),
       ),
     );
   }
