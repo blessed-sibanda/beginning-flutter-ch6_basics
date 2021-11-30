@@ -38,7 +38,13 @@ class _HomeState extends State<Home> {
             color: Colors.white70,
           ),
         ),
-        bottom: const PopupMenuButtonWidget(),
+        bottom: const PreferredSize(
+          child: SizedBox(
+            child: PopupMenuButtonWidget(),
+            height: 75.0,
+          ),
+          preferredSize: Size.fromHeight(75.0),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
