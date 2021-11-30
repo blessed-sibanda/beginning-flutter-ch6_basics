@@ -1,4 +1,4 @@
-# starter_app
+# ch6_basics
 
 A new Flutter project.
 
