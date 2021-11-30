@@ -51,18 +51,6 @@ class _HomeState extends State<Home> {
             child: Column(
               children: const [
                 ContainerWithBoxDecorationWidget(),
-                Text(
-                  'Flutter World for Mobile',
-                  style: TextStyle(
-                    fontSize: 24.0,
-                    color: Colors.deepPurple,
-                    decoration: TextDecoration.underline,
-                    decorationColor: Colors.deepPurpleAccent,
-                    decorationStyle: TextDecorationStyle.dotted,
-                    fontStyle: FontStyle.italic,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
               ],
             ),
           ),
@@ -103,9 +91,27 @@ class ContainerWithBoxDecorationWidget extends StatelessWidget {
       child: Center(
         child: RichText(
           text: const TextSpan(
-            text: 'Container',
-            style: TextStyle(color: Colors.black),
-          ),
+              text: 'Flutter World',
+              style: TextStyle(
+                fontSize: 24.0,
+                color: Colors.deepPurple,
+                decoration: TextDecoration.underline,
+                decorationColor: Colors.deepPurpleAccent,
+                decorationStyle: TextDecorationStyle.dotted,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.normal,
+              ),
+              children: [
+                TextSpan(text: ' for'),
+                TextSpan(
+                  text: ' Mobile',
+                  style: TextStyle(
+                    color: Colors.deepOrange,
+                    fontStyle: FontStyle.normal,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ]),
         ),
       ),
     );
