@@ -51,6 +51,18 @@ class _HomeState extends State<Home> {
             child: Column(
               children: const [
                 ContainerWithBoxDecorationWidget(),
+                Text(
+                  'Flutter World for Mobile',
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    color: Colors.deepPurple,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Colors.deepPurpleAccent,
+                    decorationStyle: TextDecorationStyle.dotted,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             ),
           ),
