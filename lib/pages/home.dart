@@ -61,6 +61,17 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   child: const Icon(Icons.play_arrow),
+      //   backgroundColor: Colors.lightGreen.shade100,
+      // ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        icon: const Icon(Icons.play_arrow),
+        backgroundColor: Colors.lightGreen.shade100,
+        label: const Text('Play'),
+      ),
     );
   }
 }
